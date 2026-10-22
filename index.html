@@ -102,5 +102,40 @@
     </script>
     <script type="text/javascript" src="game.js"></script>
     <script async type="text/javascript" src="love.js" onload="applicationLoad(this)"></script>
+  <!-- ============================================================
+       Счётчик посетителей Bone Silence (GitHub Pages)
+       Вставляется в index.html автоматически скриптом build_web.bat.
+       Считает бесплатный сервис HitWebCounter (без регистрации).
+       ============================================================ -->
+  <style>
+    #visitor-counter {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      z-index: 9999;
+      font: 12px/1 "Segoe UI", Arial, sans-serif;
+      color: rgba(255, 255, 255, 0.9);
+      background: rgba(0, 0, 0, 0.55);
+      padding: 6px 12px;
+      border-radius: 12px;
+      letter-spacing: 0.3px;
+      pointer-events: none;   /* бейдж не мешает кликам по игре */
+      user-select: none;
+      line-height: 1;
+    }
+    #visitor-counter .vc-label {
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    #visitor-counter img {
+      vertical-align: middle;
+      border: 0;
+    }
+  </style>
+  <div id="visitor-counter">
+    <span class="vc-label">Посетителей:</span>
+    <img src="https://www.hitwebcounter.com/counter/counter.php?page=rc-bonesilence&style=0007&nbdigits=8&type=unique&initCount=0"
+         title="Счётчик посетителей" alt="Счётчик посетителей">
+  </div>
   </body>
 </html>
